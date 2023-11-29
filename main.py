@@ -17,7 +17,7 @@ bd = sqlite3.connect("bot.db")
 c = bd.cursor()
 
 config = configparser.ConfigParser()
-config.read('confiig.ini')
+config.read('config.ini')
 
 
 for f in os.listdir("./cogs"):
