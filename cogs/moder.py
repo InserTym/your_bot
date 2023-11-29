@@ -4,7 +4,7 @@ import timems
 from typing import Optional, Self
 import configparser
 config = configparser.ConfigParser()
-config.read('confiig.ini')
+config.read('config.ini')
 
 class ModerationCog(commands.Cog):
     def __init__(self, bot):
