@@ -122,7 +122,7 @@ async def clear_error(inter, error):
                   
 @bot.event
 async def on_ready():
-  print("The bot is working, please give it a star in the repository⭐")
+  print("The bot is working, please give it a star in the repository: https://github.com/InserTym/your_bot⭐")
   c.execute("""CREATE TABLE IF NOT
 	      EXISTS members (
 	      id int,
@@ -132,7 +132,7 @@ async def on_ready():
   bd.commit()
   await bot.change_presence(
     status=disnake.Status.idle,
-    activity=disnake.Game(name=f"Give a star: ⭐"))
+    activity=disnake.Game(name=f"Give a star: https://github.com/InserTym/your_bot⭐"))
   channel = bot.get_channel(int(config.get('channel', 'channel_menu')))
   embed=disnake.Embed(title="Menu", description="""Menu for reading important information.""", color=0x3b3b3b)
   await channel.purge(limit=5)
